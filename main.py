@@ -14,7 +14,7 @@ language = st.sidebar.selectbox("Select Language / Dil Seçin", ["English", "Tur
 
 # Set company name and page styling based on language
 company_name = "InsightEd" if language == "English" else "EduVeri"
-st.sidebar.image('logo.png', use_column_width=True)  # Replace with actual logo image
+#st.sidebar.image('logo.png', use_column_width=True)  # Replace with actual logo image
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio("Go to", ["Home", "Solutions", "Features", "About Us", "Contact"])
 
@@ -32,7 +32,7 @@ st.markdown("""
 
 # Define a function for the homepage
 def homepage():
-    st.image('dashboard.png', use_column_width=True)  # Replace with a relevant image
+    #st.image('dashboard.png', use_column_width=True)  # Replace with a relevant image
     st.markdown(f"<div class='title-text'>Welcome to {company_name}</div>", unsafe_allow_html=True)
     if language == "English":
         st.markdown("<div class='subheader-text'>Transforming Education Through Data</div>", unsafe_allow_html=True)
@@ -126,4 +126,4 @@ elif menu == "Contact":
     contact_page()
 
 # Footer section
-st.markdown("<div class='footer'>© 2023 InsightEd / EduVeri. All rights reserved.</div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'>© 2024 InsightEd / EduVeri. All rights reserved.</div>", unsafe_allow_html=True)
